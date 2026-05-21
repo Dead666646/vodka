@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альянс — Ликёро-водочный завод | Оптовые поставки</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- AGE GATE -->
+    <div class="age-gate" id="ageGate">
+        <div class="age-gate-content">
+            <div class="age-gate-logo">АЛЬЯНС</div>
+            <h2>Подтвердите возраст</h2>
+            <p>Данный сайт содержит информацию об алкогольной продукции и предназначен для лиц старше 18 лет, осуществляющих предпринимательскую деятельность.</p>
+            <div class="age-buttons">
+                <button class="age-btn-yes" id="ageYes">Мне есть 18</button>
+                <button class="age-btn-no" id="ageNo">Мне нет 18</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">АЛЬЯНС</div>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" class="mobile-link">О заводе</a>
+        <a href="#products" class="mobile-link">Продукция</a>
+        <a href="#advantages" class="mobile-link">Преимущества</a>
+        <a href="#partnership" class="mobile-link">Партнёрство</a>
+        <a href="#certificates" class="mobile-link">Сертификаты</a>
+        <a href="#contact" class="mobile-link">Контакты</a>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4L8 16V40L24 44L40 40V16L24 4Z" stroke="#C9A84C" stroke-width="1.5" fill="none"/>
+                        <path d="M24 4V44" stroke="#C9A84C" stroke-width="0.5" opacity="0.5"/>
+                        <path d="M8 16L40 16" stroke="#C9A84C" stroke-width="0.5" opacity="0.5"/>
+                        <path d="M16 10V20" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+                        <path d="M32 10V20" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+                        <path d="M18 26L24 22L30 26" stroke="#C9A84C" stroke-width="1" fill="none"/>
+                        <circle cx="24" cy="32" r="3" stroke="#C9A84C" stroke-width="1" fill="none"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Альянс</span>
+                    <span class="logo-sub">Ликёро-водочный завод</span>
+                </div>
+            </a>
+            <nav>
+                <a href="#about">О заводе</a>
+                <a href="#products">Продукция</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#partnership">Партнёрство</a>
+                <a href="#certificates">Качество</a>
+            </nav>
+            <a href="#partnership" class="header-cta">Стать партнёром</a>
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <div class="hero-badge-dot"></div>
+                <span>Оптовые поставки по всей России</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="line">Сила <span class="gold">сибирской</span></span>
+                <span class="line"><span class="outline">природы</span> в каждой</span>
+                <span class="line">капле</span>
+            </h1>
+            <p class="hero-desc">
+                Ликёро-водочный завод «Альянс» — производство премиальных алкогольных напитков из натурального сырья Сибири. Надёжный B2B-партнёр для вашего бизнеса.
+            </p>
+            <div class="hero-actions">
+                <a href="#partnership" class="btn-primary">
+                    Получить прайс-лист
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"/></svg>
+                </a>
+                <a href="#products" class="btn-secondary">Каталог продукции</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">12+</div>
+                    <div class="hero-stat-label">Лет на рынке</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">50M</div>
+                    <div class="hero-stat-label">Литров в год</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">300+</div>
+                    <div class="hero-stat-label">Партнёров</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-item"><span>Водка премиум</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Настойки сибирские</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Ликёры крафтовые</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Бальзамы</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Private Label</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Оптовые поставки</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Водка премиум</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Настойки сибирские</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Ликёры крафтовые</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Бальзамы</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Private Label</span><div class="marquee-dot"></div></div>
+            <div class="marquee-item"><span>Оптовые поставки</span><div class="marquee-dot"></div></div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">О заводе</div>
+                <h2 class="section-title">Традиции Сибири,<br>современные технологии</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-inner">
+                        <div class="about-bottle">🏭</div>
+                    </div>
+                    <div class="about-image-label">
+                        <span>Основан в 2014 году</span>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>Производство полного цикла в сердце Сибири</h3>
+                    <p>
+                        Ликёро-водочный завод «Альянс» расположен в экологически чистом регионе Сибири. Мы используем воду из артезианских скважин глубиной более 150 метров и натуральное растительное сырьё, собранное в таёжных лесах.
+                    </p>
+                    <p>
+                        Наше производство оснащено оборудованием ведущих европейских производителей. Каждая партия проходит многоступенчатый контроль качества — от входного сырья до готовой продукции.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">💧</div>
+                            <h4>Артезианская вода</h4>
+                            <p>Скважины 150+ метров</p>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🌿</div>
+                            <h4>Сырьё из тайги</h4>
+                            <p>Кедровый орех, ягоды, травы</p>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">⚙️</div>
+                            <h4>Еврооборудование</h4>
+                            <p>Италия, Германия</p>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🔬</div>
+                            <h4>Лаборатория</h4>
+                            <p>Контроль каждой партии</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Продукция</div>
+                <h2 class="section-title">Наш каталог</h2>
+                <p class="section-subtitle">12+ наименований премиальной продукции для розничных сетей, дистрибьюторов и HoReCa. Возможна фасовка под ваш бренд.</p>
+            </div>
+
+            <!-- PRODUCTS FILTER -->
+            <div class="products-filter reveal">
+                <div class="filter-group">
+                    <label class="filter-label">Крепость:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="strength" data-value="all">Все</button>
+                        <button class="filter-btn" data-filter="strength" data-value="20-30">20-30°</button>
+                        <button class="filter-btn" data-filter="strength" data-value="35-40">35-40°</button>
+                        <button class="filter-btn" data-filter="strength" data-value="45">45°+</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Объём:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="volume" data-value="all">Все</button>
+                        <button class="filter-btn" data-filter="volume" data-value="0.35">0.35 л</button>
+                        <button class="filter-btn" data-filter="volume" data-value="0.5">0.5 л</button>
+                        <button class="filter-btn" data-filter="volume" data-value="0.7">0.7 л</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Цена:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="price" data-value="all">Все</button>
+                        <button class="filter-btn" data-filter="price" data-value="0-500">до 500 ₽</button>
+                        <button class="filter-btn" data-filter="price" data-value="500-1000">500-1000 ₽</button>
+                        <button class="filter-btn" data-filter="price" data-value="1000+">1000+ ₽</button>
+                    </div>
+                </div>
+                
+                <button class="filter-reset" id="filterReset">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                    Сбросить
+                </button>
+            </div>
+
+            <div class="products-count" id="productsCount">Показано: 12 товаров</div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Товар 1: Водка "Альянс Кристальная" -->
+                <div class="product-card reveal" 
+                     data-strength="40" 
+                     data-volume="0.5" 
+                     data-price="450"
+                     data-category="vodka">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1613214156685-3c60c60166c5?w=600&h=800&fit=crop" 
+                             alt="Альянс Кристальная"
+                             loading="lazy">
+                        <div class="product-badge">Хит</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Водка</div>
+                        <h3 class="product-name">Альянс Кристальная</h3>
+                        <p class="product-desc">Премиальная водка на артезианской воде с многоступенчатой очисткой через серебро и кедровый уголь.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">40°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">450 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="vodka-kristalnaya"
+                                data-name="Альянс Кристальная"
+                                data-category="Водка"
+                                data-strength="40°"
+                                data-volume="0.5 л"
+                                data-price="450 ₽"
+                                data-image="https://images.unsplash.com/photo-1613214156685-3c60c60166c5?w=800&h=1000&fit=crop"
+                                data-description="Премиальная водка на артезианской воде с многоступенчатой очисткой через серебро и кедровый уголь. Идеально чистый вкус без посторонних запахов и привкусов."
+                                data-ingredients="Вода артезианская, спирт ректификованный «Люкс», кедровый уголь, серебро"
+                                data-food="Рыба, мясо, салаты, закуски"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 2: Настойка "Кедровая Сила" -->
+                <div class="product-card reveal" 
+                     data-strength="40" 
+                     data-volume="0.5" 
+                     data-price="650"
+                     data-category="tincture">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?w=600&h=800&fit=crop" 
+                             alt="Кедровая Сила"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Настойка</div>
+                        <h3 class="product-name">Кедровая Сила</h3>
+                        <p class="product-desc">Настойка на кедровых орешках с добавлением таёжных трав. Мягкий вкус с ореховым послевкусием.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">40°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">650 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="tincture-kedrovaya"
+                                data-name="Кедровая Сила"
+                                data-category="Настойка"
+                                data-strength="40°"
+                                data-volume="0.5 л"
+                                data-price="650 ₽"
+                                data-image="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?w=800&h=1000&fit=crop"
+                                data-description="Настойка на кедровых орешках с добавлением таёжных трав. Мягкий вкус с ореховым послевкусием и лёгкой сладостью."
+                                data-ingredients="Вода, спирт, кедровые орехи, мёд, таёжные травы (душица, зверобой)"
+                                data-food="Мясные блюда, дичь, сыры"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 3: Ликёр "Таёжный Бархат" -->
+                <div class="product-card reveal" 
+                     data-strength="18" 
+                     data-volume="0.5" 
+                     data-price="580"
+                     data-category="liqueur">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=800&fit=crop" 
+                             alt="Таёжный Бархат"
+                             loading="lazy">
+                        <div class="product-badge new">New</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Ликёр</div>
+                        <h3 class="product-name">Таёжный Бархат</h3>
+                        <p class="product-desc">Кремовый ликёр на основе сливок с экстрактом брусники и кедрового ореха. Десертный вкус.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">18°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">580 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="liqueur-taiga"
+                                data-name="Таёжный Бархат"
+                                data-category="Ликёр"
+                                data-strength="18°"
+                                data-volume="0.5 л"
+                                data-price="580 ₽"
+                                data-image="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&h=1000&fit=crop"
+                                data-description="Кремовый ликёр на основе сливок с экстрактом брусники и кедрового ореха. Нежный десертный вкус с ягодными нотами."
+                                data-ingredients="Сливки, сахар, экстракт брусники, кедровый орех, ваниль"
+                                data-food="Десерты, фрукты, шоколад, кофе"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 4: Бальзам "Сибирский Характер" -->
+                <div class="product-card reveal" 
+                     data-strength="45" 
+                     data-volume="0.5" 
+                     data-price="720"
+                     data-category="balsam">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=800&fit=crop" 
+                             alt="Сибирский Характер"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Бальзам</div>
+                        <h3 class="product-name">Сибирский Характер</h3>
+                        <p class="product-desc">Традиционный бальзам на 24 травах и кореньях. Насыщенный вкус с пряными нотами.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">45°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">720 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="balsam-sibir"
+                                data-name="Сибирский Характер"
+                                data-category="Бальзам"
+                                data-strength="45°"
+                                data-volume="0.5 л"
+                                data-price="720 ₽"
+                                data-image="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&h=1000&fit=crop"
+                                data-description="Традиционный сибирский бальзам на 24 травах и кореньях. Насыщенный вкус с пряными нотами и целебными свойствами."
+                                data-ingredients="Спирт, вода, 24 травы и коренья (родиола, зверобой, душица, кедр и др.), мёд"
+                                data-food="Диgestив, чай, кофе"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 5: Настойка "Брусничная Роща" -->
+                <div class="product-card reveal" 
+                     data-strength="30" 
+                     data-volume="0.7" 
+                     data-price="690"
+                     data-category="tincture">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=600&h=800&fit=crop" 
+                             alt="Брусничная Роща"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Настойка</div>
+                        <h3 class="product-name">Брусничная Роща</h3>
+                        <p class="product-desc">Мягкая ягодная настойка из дикорастущей брусники. Идеальный дижестив.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">30°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.7 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">690 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="tincture-brusnika"
+                                data-name="Брусничная Роща"
+                                data-category="Настойка"
+                                data-strength="30°"
+                                data-volume="0.7 л"
+                                data-price="690 ₽"
+                                data-image="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=800&h=1000&fit=crop"
+                                data-description="Мягкая ягодная настойка из дикорастущей сибирской брусники. Идеальный дижестив с лёгкой кислинкой."
+                                data-ingredients="Вода, спирт, брусника дикорастущая, сахар"
+                                data-food="Десерты, сыры, фрукты"
+                                data-box="4 бутылки">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 6: Private Label -->
+                <div class="product-card reveal" 
+                     data-strength="0" 
+                     data-volume="0" 
+                     data-price="0"
+                     data-category="private">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=800&fit=crop" 
+                             alt="Private Label"
+                             loading="lazy">
+                        <div class="product-badge premium">B2B</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Private Label</div>
+                        <h3 class="product-name">Ваша торговая марка</h3>
+                        <p class="product-desc">Производство алкоголя под вашим брендом. Полный цикл: от рецептуры до упаковки и логистики.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">∞</div>
+                                <div class="product-spec-label">Рецептур</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">MoQ</div>
+                                <div class="product-spec-label">от 5000 л</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">45</div>
+                                <div class="product-spec-label">Дней срок</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="private-label"
+                                data-name="Private Label (СТМ)"
+                                data-category="Услуга"
+                                data-strength="По запросу"
+                                data-volume="Любой"
+                                data-price="По запросу"
+                                data-image="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&h=1000&fit=crop"
+                                data-description="Производство алкогольной продукции под вашей торговой маркой. Полный цикл: разработка рецептуры, дизайн этикетки, производство, розлив, упаковка и логистика."
+                                data-ingredients="По вашему ТЗ"
+                                data-food="Индивидуально"
+                                data-box="От 5000 литров">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 7: Водка "Сибирский Характер" -->
+                <div class="product-card reveal" 
+                     data-strength="40" 
+                     data-volume="0.7" 
+                     data-price="520"
+                     data-category="vodka">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1613214156685-3c60c60166c5?w=600&h=800&fit=crop" 
+                             alt="Сибирский Характер"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Водка</div>
+                        <h3 class="product-name">Сибирский Характер</h3>
+                        <p class="product-desc">Крепкая водка с мягким вкусом. Дистилляция через колонны из меди и фильтрация через берёзовый уголь.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">40°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.7 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">520 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="vodka-sibir"
+                                data-name="Сибирский Характер"
+                                data-category="Водка"
+                                data-strength="40°"
+                                data-volume="0.7 л"
+                                data-price="520 ₽"
+                                data-image="https://images.unsplash.com/photo-1613214156685-3c60c60166c5?w=800&h=1000&fit=crop"
+                                data-description="Крепкая водка с мягким вкусом. Дистилляция через колонны из меди и фильтрация через берёзовый уголь."
+                                data-ingredients="Вода артезианская, спирт ректификованный, берёзовый уголь"
+                                data-food="Мясо, рыба, закуски"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 8: Настойка "Медовая Тайга" -->
+                <div class="product-card reveal" 
+                     data-strength="35" 
+                     data-volume="0.5" 
+                     data-price="680"
+                     data-category="tincture">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?w=600&h=800&fit=crop" 
+                             alt="Медовая Тайга"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Настойка</div>
+                        <h3 class="product-name">Медовая Тайга</h3>
+                        <p class="product-desc">Настойка на алтайском мёду с добавлением прополиса и кедровой живицы. Тёплый, согревающий вкус.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">35°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">680 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="tincture-med"
+                                data-name="Медовая Тайга"
+                                data-category="Настойка"
+                                data-strength="35°"
+                                data-volume="0.5 л"
+                                data-price="680 ₽"
+                                data-image="https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?w=800&h=1000&fit=crop"
+                                data-description="Настойка на алтайском мёду с добавлением прополиса и кедровой живицы. Тёплый, согревающий вкус."
+                                data-ingredients="Вода, спирт, мёд алтайский, прополис, кедровая живица"
+                                data-food="Десерты, чай, выпечка"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 9: Ликёр "Черносмородиновый Бархат" -->
+                <div class="product-card reveal" 
+                     data-strength="20" 
+                     data-volume="0.5" 
+                     data-price="590"
+                     data-category="liqueur">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=800&fit=crop" 
+                             alt="Черносмородиновый Бархат"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Ликёр</div>
+                        <h3 class="product-name">Черносмородиновый Бархат</h3>
+                        <p class="product-desc">Насыщенный ликёр из дикой сибирской смородины. Идеален для коктейлей и десертов.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">20°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">590 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="liqueur-smorodina"
+                                data-name="Черносмородиновый Бархат"
+                                data-category="Ликёр"
+                                data-strength="20°"
+                                data-volume="0.5 л"
+                                data-price="590 ₽"
+                                data-image="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&h=1000&fit=crop"
+                                data-description="Насыщенный ликёр из дикой сибирской смородины. Идеален для коктейлей и десертов."
+                                data-ingredients="Вода, спирт, смородина чёрная, сахар"
+                                data-food="Десерты, мороженое, коктейли"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 10: Бальзам "Енисей" -->
+                <div class="product-card reveal" 
+                     data-strength="40" 
+                     data-volume="0.35" 
+                     data-price="480"
+                     data-category="balsam">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=800&fit=crop" 
+                             alt="Енисей"
+                             loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Бальзам</div>
+                        <h3 class="product-name">Енисей</h3>
+                        <p class="product-desc">Традиционный сибирский бальзам на 18 травах: зверобой, душица, родиола, кедр. Для тонуса и иммунитета.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">40°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.35 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">480 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="balsam-enisey"
+                                data-name="Енисей"
+                                data-category="Бальзам"
+                                data-strength="40°"
+                                data-volume="0.35 л"
+                                data-price="480 ₽"
+                                data-image="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&h=1000&fit=crop"
+                                data-description="Традиционный сибирский бальзам на 18 травах: зверобой, душица, родиола, кедр. Для тонуса и иммунитета."
+                                data-ingredients="Спирт, вода, 18 трав (зверобой, душица, родиола, кедр и др.)"
+                                data-food="Чай, кофе, дижестив"
+                                data-box="12 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 11: Водка "Золотая Коллекция" -->
+                <div class="product-card reveal" 
+                     data-strength="40" 
+                     data-volume="0.5" 
+                     data-price="1200"
+                     data-category="vodka">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1613214156685-3c60c60166c5?w=600&h=800&fit=crop" 
+                             alt="Золотая Коллекция"
+                             loading="lazy">
+                        <div class="product-badge premium">Премиум</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Водка премиум</div>
+                        <h3 class="product-name">Золотая Коллекция</h3>
+                        <p class="product-desc">Флагманский продукт. Мягчайшая водка на артезианской воде с добавлением экстракта кедрового ореха.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">40°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">1200 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="vodka-gold"
+                                data-name="Золотая Коллекция"
+                                data-category="Водка премиум"
+                                data-strength="40°"
+                                data-volume="0.5 л"
+                                data-price="1200 ₽"
+                                data-image="https://images.unsplash.com/photo-1613214156685-3c60c60166c5?w=800&h=1000&fit=crop"
+                                data-description="Флагманский продукт. Мягчайшая водка на артезианской воде с добавлением экстракта кедрового ореха."
+                                data-ingredients="Вода артезианская, спирт «Альфа», экстракт кедрового ореха, серебро"
+                                data-food="Икра, деликатесы, изысканные закуски"
+                                data-box="4 бутылки в подарочном коробе">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Товар 12: Настойка "Облепиховая Энергия" -->
+                <div class="product-card reveal" 
+                     data-strength="25" 
+                     data-volume="0.5" 
+                     data-price="620"
+                     data-category="tincture">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=600&h=800&fit=crop" 
+                             alt="Облепиховая Энергия"
+                             loading="lazy">
+                        <div class="product-badge new">New</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Настойка</div>
+                        <h3 class="product-name">Облепиховая Энергия</h3>
+                        <p class="product-desc">Яркая настойка из сибирской облепихи с витамином С. Бодрящий вкус с лёгкой кислинкой.</p>
+                        <div class="product-specs">
+                            <div class="product-spec">
+                                <div class="product-spec-value">25°</div>
+                                <div class="product-spec-label">Крепость</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">0.5 л</div>
+                                <div class="product-spec-label">Объём</div>
+                            </div>
+                            <div class="product-spec">
+                                <div class="product-spec-value">620 ₽</div>
+                                <div class="product-spec-label">Цена</div>
+                            </div>
+                        </div>
+                        <button class="product-details-btn" 
+                                data-product="tincture-oblepiha"
+                                data-name="Облепиховая Энергия"
+                                data-category="Настойка"
+                                data-strength="25°"
+                                data-volume="0.5 л"
+                                data-price="620 ₽"
+                                data-image="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?w=800&h=1000&fit=crop"
+                                data-description="Яркая настойка из сибирской облепихи с витамином С. Бодрящий вкус с лёгкой кислинкой."
+                                data-ingredients="Вода, спирт, облепиха сибирская, сахар, витамин С"
+                                data-food="Фрукты, десерты, коктейли"
+                                data-box="6 бутылок">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Преимущества</div>
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <p class="section-subtitle">Комплексный подход к работе с партнёрами — от первого звонка до доставки на ваш склад</p>
+            </div>
+            <div class="adv-grid">
+                <div class="adv-card reveal">
+                    <div class="adv-number">01</div>
+                    <div class="adv-icon">🏭</div>
+                    <h3 class="adv-title">Своё производство</h3>
+                    <p class="adv-text">Полный цикл производства на собственных мощностях. Контроль качества на каждом этапе.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">02</div>
+                    <div class="adv-icon">💰</div>
+                    <h3 class="adv-title">Гибкие условия</h3>
+                    <p class="adv-text">Индивидуальные цены, отсрочка платежа для постоянных партнёров, система скидок от объёма.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">03</div>
+                    <div class="adv-icon">🚛</div>
+                    <h3 class="adv-title">Логистика</h3>
+                    <p class="adv-text">Собственный автопарк и партнёрство с ТК. Доставка по всей России в кратчайшие сроки.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">04</div>
+                    <div class="adv-icon">📊</div>
+                    <h3 class="adv-title">Маркетинг</h3>
+                    <p class="adv-text">POS-материалы, промо-акции, обучение персонала. Помогаем увеличивать продажи.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">05</div>
+                    <div class="adv-icon">📋</div>
+                    <h3 class="adv-title">Документация</h3>
+                    <p class="adv-text">Полный пакет сопроводительных документов, ЕГАИС, декларации соответствия.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">06</div>
+                    <div class="adv-icon">🎯</div>
+                    <h3 class="adv-title">Мин. партия</h3>
+                    <p class="adv-text">Низкий минимальный заказ для старта сотрудничества. Работаем с бизнесом любого масштаба.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">07</div>
+                    <div class="adv-icon">🏆</div>
+                    <h3 class="adv-title">Награды</h3>
+                    <p class="adv-text">Золотые медали на «Продэкспо» и WorldFood. Признание качества на федеральном уровне.</p>
+                </div>
+                <div class="adv-card reveal">
+                    <div class="adv-number">08</div>
+                    <div class="adv-icon">🤝</div>
+                    <h3 class="adv-title">Персональный менеджер</h3>
+                    <p class="adv-text">За каждым партнёром закреплён личный менеджер. Оперативная связь 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Качество</div>
+                <h2 class="section-title">Сертификаты и лицензии</h2>
+                <p class="section-subtitle">Вся продукция сертифицирована и соответствует ГОСТ. Мы работаем в полном соответствии с законодательством РФ.</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon">📜</div>
+                    <h4 class="cert-name">Лицензия Росалкогольрегулирования</h4>
+                    <p class="cert-desc">Лицензия на производство и оборот этилового спирта и алкогольной продукции</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">✅</div>
+                    <h4 class="cert-name">ГОСТ Р</h4>
+                    <p class="cert-desc">Сертификат соответствия продукции требованиям государственных стандартов</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">🛡️</div>
+                    <h4 class="cert-name">HACCP / ISO 22000</h4>
+                    <p class="cert-desc">Система менеджмента безопасности пищевой продукции</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon">🏅</div>
+                    <h4 class="cert-name">Медали «Продэкспо»</h4>
+                    <p class="cert-desc">Золотые медали международной выставки за качество продукции</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERSHIP -->
+    <section class="partnership" id="partnership">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Партнёрство</div>
+                <h2 class="section-title">Станьте нашим партнёром</h2>
+            </div>
+            <div class="partnership-content">
+                <div class="partnership-info reveal">
+                    <h3>Мы ищем дистрибьюторов, розничные сети и оптовые компании</h3>
+                    <p>
+                        «Альянс» предлагает выгодные условия сотрудничества для бизнеса любого масштаба. Мы обеспечиваем полную маркетинговую и логистическую поддержку, помогая нашим партнёрам увеличивать прибыль.
+                    </p>
+                    <div class="partnership-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content"><h4>Заявка</h4><p>Оставьте заявку на сайте или свяжитесь с нами по телефону</p></div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content"><h4>Коммерческое предложение</h4><p>Менеджер подготовит индивидуальное предложение с учётом ваших потребностей</p></div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content"><h4>Дегустация</h4><p>Бесплатно отправим образцы продукции для оценки качества</p></div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content"><h4>Первая поставка</h4><p>Заключаем договор и организуем первую партию с максимальными скидками</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partnership-form reveal" id="contact">
+                    <h3 class="form-title">Оставить заявку</h3>
+                    <p class="form-subtitle">Заполните форму и мы свяжемся с вами в течение 2 часов</p>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Компания *</label>
+                                <input type="text" id="company" placeholder="Название компании" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="email@company.ru">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="product">Интересующая продукция</label>
+                            <select id="product">
+                                <option value="">Выберите категорию</option>
+                                <option>Водка</option>
+                                <option>Настойки</option>
+                                <option>Ликёры</option>
+                                <option>Бальзамы</option>
+                                <option>Private Label (СТМ)</option>
+                                <option>Весь ассортимент</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Комментарий</label>
+                            <textarea id="comment" placeholder="Расскажите о вашем бизнесе и потребностях..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Отправить заявку</button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности. Мы не передаём ваши данные третьим лицам.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-name">АЛЬЯНС</div>
+                    <p>Ликёро-водочный завод полного цикла. Производство и оптовые поставки премиальных алкогольных напитков из Сибири.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="#about">О заводе</a>
+                    <a href="#products">Продукция</a>
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#partnership">Партнёрство</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Продукция</h4>
+                    <a href="#">Водка</a>
+                    <a href="#">Настойки</a>
+                    <a href="#">Ликёры</a>
+                    <a href="#">Бальзамы</a>
+                    <a href="#">Private Label</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <a href="tel:+78001234567">8 (800) 123-45-67</a>
+                    <a href="mailto:opt@alliance-craft.ru">opt@alliance-craft.ru</a>
+                    <a href="#">г. Новосибирск, ул. Промышленная, 12</a>
+                    <a href="#">Пн-Пт: 9:00 — 18:00</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Альянс. Все права защищены.</p>
+                <p class="footer-legal">Чрезмерное употребление алкоголя вредит вашему здоровью. Сайт не является публичной офертой. Информация предназначена для лиц старше 18 лет.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT MODAL -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalProductImage" src="" alt="">
+                </div>
+                
+                <div class="modal-info">
+                    <div class="modal-category" id="modalCategory"></div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    
+                    <div class="modal-price" id="modalPrice"></div>
+                    
+                    <p class="modal-description" id="modalDescription"></p>
+                    
+                    <div class="modal-specs-grid">
+                        <div class="modal-spec">
+                            <span class="modal-spec-label">Крепость:</span>
+                            <span class="modal-spec-value" id="modalStrength"></span>
+                        </div>
+                        <div class="modal-spec">
+                            <span class="modal-spec-label">Объём:</span>
+                            <span class="modal-spec-value" id="modalVolume"></span>
+                        </div>
+                        <div class="modal-spec">
+                            <span class="modal-spec-label">В коробе:</span>
+                            <span class="modal-spec-value" id="modalBox"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">Состав</h3>
+                        <p class="modal-section-text" id="modalIngredients"></p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">Рекомендации к столу</h3>
+                        <p class="modal-section-text" id="modalFood"></p>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="#partnership" class="btn-primary modal-cta" onclick="closeModal()">
+                            Оставить заявку
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                        <button class="btn-secondary" onclick="downloadSpecs()">
+                            Скачать спецификацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
